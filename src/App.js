@@ -1,19 +1,18 @@
-import { Box, Flex } from "@chakra-ui/react";
-import "./App.css";
-import MainContent from "./components/MainContent";
-import Sidebar from "./components/Sidebar";
-import TopBg from "./components/TopBg";
+import React from "react";
+import { Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import TestPage from "./pages/TestPage";
+import Login from "./pages/Login";
 
 function App() {
   return (
-    <div className="App">
-      <Flex bg="gray.50" position="relative">
-        <TopBg />
-
-        <Sidebar />
-        <MainContent />
-      </Flex>
-    </div>
+    <>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/test" element={<TestPage />} />
+        <Route path="/login" element={<Login />} />
+      </Routes>
+    </>
   );
 }
 

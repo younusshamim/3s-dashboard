@@ -3,7 +3,7 @@ import React from "react";
 
 const TopBg = () => {
   return (
-    <Box h="250px" w="100%" bg="brand.600" position="absolute" top="0"></Box>
+    <Box h="100px" w="100%" bg="brand.600" position="absolute" top="0"></Box>
   );
 };
 
